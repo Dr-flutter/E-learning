@@ -1,0 +1,287 @@
+<html><head><base href="/connexion/cours/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue des Cours - Ibra_Academy Inspiré</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-600 text-white">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold">Ibra_Academy Inspiré</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="/cours" class="hover:text-blue-200">Cours</a>
+        <a href="/sujets" class="hover:text-blue-200">Sujets</a>
+        <a href="/professeurs" class="hover:text-blue-200">Pour les professeurs</a>
+         &nbsp;
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative" id="userMenu">
+          <button class="flex items-center space-x-2 focus:outline-none" id="userMenuButton">
+            <img src="https://via.placeholder.com/40" alt="Photo de profil" class="w-8 h-8 rounded-full">
+            <span>John Doe</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden" id="userMenuDropdown">
+            <a href="/profil" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profil</a>
+            <a href="/parametres" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Paramètres</a>
+            <a href="/deconnexion" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Déconnexion</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+    <h1 class="text-3xl font-bold mb-8">Catalogue des Cours</h1>
+
+    <div class="mb-8">
+      <input type="text" placeholder="Rechercher un cours..." class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" id="searchInput">
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="coursesGrid">
+      <!-- Cours 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours de mathématiques" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Mathématiques Avancées</h2>
+          <p class="text-gray-600 mb-4">Explorez les concepts avancés de l'algèbre, du calcul et de la géométrie.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.8 (256 avis)</span>
+          </div>
+          <a href="/cours/mathematiques-avancees" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+
+      <!-- Cours 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours de physique" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Physique Quantique</h2>
+          <p class="text-gray-600 mb-4">Découvrez les mystères de la physique quantique et ses applications modernes.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.9 (189 avis)</span>
+          </div>
+          <a href="/cours/physique-quantique" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+
+      <!-- Cours 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours de programmation" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Programmation en Python</h2>
+          <p class="text-gray-600 mb-4">Apprenez à coder en Python et développez vos propres applications.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.7 (320 avis)</span>
+          </div>
+          <a href="/cours/programmation-python" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+
+      <!-- Cours 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours de biologie" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Biologie Moléculaire</h2>
+          <p class="text-gray-600 mb-4">Plongez dans le monde fascinant de la biologie moléculaire et de la génétique.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.6 (215 avis)</span>
+          </div>
+          <a href="/cours/biologie-moleculaire" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+
+      <!-- Cours 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours d'histoire" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Histoire Mondiale</h2>
+          <p class="text-gray-600 mb-4">Explorez les grands événements qui ont façonné notre monde moderne.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.8 (278 avis)</span>
+          </div>
+          <a href="/cours/histoire-mondiale" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+
+      <!-- Cours 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+        <img src="https://via.placeholder.com/400x200" alt="Image du cours d'économie" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Économie et Finance</h2>
+          <p class="text-gray-600 mb-4">Comprenez les principes fondamentaux de l'économie et de la finance personnelle.</p>
+          <div class="flex items-center mb-4">
+            <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <span class="text-gray-600">4.7 (203 avis)</span>
+          </div>
+          <a href="/cours/economie-finance" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">Commencer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-center">
+      <button id="loadMore" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Charger plus de cours</button>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">À propos</h4>
+          <ul>
+            <li><a href="/a-propos" class="hover:text-blue-300">Notre mission</a></li>
+            <li><a href="/impact" class="hover:text-blue-300">Notre impact</a></li>
+            <li><a href="/equipe" class="hover:text-blue-300">Notre équipe</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+          <ul>
+            <li><a href="/centre-aide" class="hover:text-blue-300">Centre d'aide</a></li>
+            <li><a href="/parents" class="hover:text-blue-300">Pour les parents</a></li>
+            <li><a href="/enseignants" class="hover:text-blue-300">Pour les enseignants</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Communauté</h4>
+          <ul>
+            <li><a href="/blog" class="hover:text-blue-300">Blog</a></li>
+            <li><a href="/contributeurs" class="hover:text-blue-300">Contributeurs</a></li>
+            <li><a href="/traducteurs" class="hover:text-blue-300">Traducteurs</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4">
+          <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+        <p>&copy; 2023 Ibra_Academy Inspiré. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu utilisateur
+    const userMenuButton = document.getElementById('userMenuButton');
+    const userMenuDropdown = document.getElementById('userMenuDropdown');
+
+    userMenuButton.addEventListener('click', () => {
+      userMenuDropdown.classList.toggle('hidden');
+    });
+
+    // Fermer le menu lorsqu'on clique en dehors
+    document.addEventListener('click', (event) => {
+      if (!userMenuButton.contains(event.target) && !userMenuDropdown.contains(event.target)) {
+        userMenuDropdown.classList.add('hidden');
+      }
+    });
+
+    // Recherche de cours
+    const searchInput = document.getElementById('searchInput');
+    const coursesGrid = document.getElementById('coursesGrid');
+    const courseCards = document.querySelectorAll('.course-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      courseCards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        const description = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+    // Charger plus de cours (simulation)
+    const loadMoreButton = document.getElementById('loadMore');
+    let coursesLoaded = 6;
+
+    loadMoreButton.addEventListener('click', () => {
+      // Simulation de chargement de nouveaux cours
+      for (let i = 0; i < 3; i++) {
+        if (coursesLoaded < 12) { // Limite arbitraire de 12 cours au total
+          const newCourse = courseCards[0].cloneNode(true);
+          newCourse.querySelector('h2').textContent = `Nouveau Cours ${++coursesLoaded}`;
+          newCourse.querySelector('p').textContent = `Description du nouveau cours ${coursesLoaded}.`;
+          coursesGrid.appendChild(newCourse);
+        }
+      }
+
+      if (coursesLoaded >= 12) {
+        loadMoreButton.style.display = 'none';
+      }
+    });
+
+    // Animation d'apparition des cartes de cours
+    function animateCards() {
+      courseCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+    }
+
+    window.addEventListener('load', animateCards);
+
+    // Menu mobile
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+
+  </script>
+</body>
+</html>

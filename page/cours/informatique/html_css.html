@@ -1,0 +1,221 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours HTML et CSS | Khan Academy Inspiré</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-600 text-white">
+    <nav class="container mx-auto px-6 py-3 flex flex-wrap justify-between items-center">
+      <a href="/" class="text-2xl font-bold">Ibra_Academy Inspiré</a>
+      <button class="md:hidden text-white focus:outline-none" id="menuToggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:flex md:w-auto md:items-center" id="mobileMenu">
+        <div class="flex flex-col mt-4 md:flex-row md:mt-0 md:space-x-4">
+          <a href="/cours" class="hover:text-blue-200 py-2">Cours</a>
+          <a href="/sujets" class="hover:text-blue-200 py-2">Sujets</a>
+          <a href="/professeurs" class="hover:text-blue-200 py-2">Pour les professeurs</a>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4 mt-4 md:mt-0">
+        <a href="/page/login/connexion.html" class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100">Connexion</a>
+        <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-600 px-4 py-2 rounded-full hover:bg-yellow-300">Inscription</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+    <nav class="text-sm mb-6" aria-label="Breadcrumb">
+      <ol class="list-none p-0 inline-flex">
+        <li class="flex items-center">
+          <a href="/page/cours/informatique/informatique.html" class="text-blue-600 hover:text-blue-800">Informatique</a>
+          <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+        </li>
+        <li class="flex items-center">
+          <a href="/page/cours/informatique/dev-web.html" class="text-blue-600 hover:text-blue-800">Développement Web</a>
+          <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+        </li>
+        <li>
+          <span class="text-gray-500" aria-current="page">HTML et CSS</span>
+        </li>
+      </ol>
+    </nav>
+
+    <h1 class="text-4xl font-bold mb-8">Cours HTML et CSS</h1>
+
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Introduction au cours</h2>
+      <p class="mb-4">Bienvenue dans notre cours sur HTML et CSS ! Dans ce cours, vous apprendrez les bases de la création de sites web en utilisant ces deux langages fondamentaux du développement web.</p>
+      <p class="mb-4">Voici ce que vous allez apprendre :</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Structure de base d'une page HTML</li>
+        <li>Balises HTML courantes et leur utilisation</li>
+        <li>Introduction aux sélecteurs CSS</li>
+        <li>Mise en page avec CSS</li>
+        <li>Responsive design avec CSS</li>
+      </ul>
+      <p>Prêt à commencer ? Cliquez sur le bouton ci-dessous pour débuter votre apprentissage !</p>
+      <a href="#module1" class="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Commencer le cours</a>
+    </div>
+
+    <div id="module1" class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Module 1 : Les bases du HTML</h2>
+      <p class="mb-4">Dans ce module, nous allons explorer les fondamentaux du HTML.</p>
+      <div class="space-y-4">
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 1 : Structure de base d'une page HTML</h3>
+          <p>Apprenez à créer la structure de base d'une page web avec les balises essentielles.</p>
+          <a href="/page/cours/informatique/M1L1html_css.html" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 2 : Les balises de texte</h3>
+          <p>Découvrez comment formater du texte en utilisant diverses balises HTML.</p>
+          <a href="/informatique/dev-web/html-css/module1/lecon2" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+        <div class="border-l-4 border-blue-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 3 : Les liens et les images</h3>
+          <p>Apprenez à insérer des liens et des images dans vos pages web.</p>
+          <a href="/informatique/dev-web/html-css/module1/lecon3" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="module2" class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Module 2 : Introduction au CSS</h2>
+      <p class="mb-4">Dans ce module, nous allons découvrir les bases du CSS pour styliser vos pages web.</p>
+      <div class="space-y-4">
+        <div class="border-l-4 border-green-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 1 : Les sélecteurs CSS</h3>
+          <p>Apprenez à cibler des éléments HTML spécifiques pour leur appliquer des styles.</p>
+          <a href="/informatique/dev-web/html-css/module2/lecon1" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+        <div class="border-l-4 border-green-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 2 : Les propriétés de texte et de couleur</h3>
+          <p>Découvrez comment modifier l'apparence du texte et des couleurs sur votre page.</p>
+          <a href="/informatique/dev-web/html-css/module2/lecon2" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+        <div class="border-l-4 border-green-500 pl-4">
+          <h3 class="text-xl font-semibold mb-2">Leçon 3 : Le modèle de boîte CSS</h3>
+          <p>Comprenez comment fonctionne le modèle de boîte en CSS pour contrôler l'espacement et les bordures.</p>
+          <a href="/informatique/dev-web/html-css/module2/lecon3" class="text-blue-600 hover:underline">Commencer la leçon</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-100 rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Projet final</h2>
+      <p class="mb-4">Mettez en pratique tout ce que vous avez appris en créant votre propre site web de portfolio !</p>
+      <p class="mb-4">Dans ce projet, vous allez :</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Créer une structure HTML complète pour un site web de portfolio</li>
+        <li>Appliquer des styles CSS pour rendre votre site attrayant et professionnel</li>
+        <li>Implémenter un design responsive pour que votre site s'adapte à différentes tailles d'écran</li>
+      </ul>
+      <a href="/informatique/dev-web/html-css/projet-final" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">Commencer le projet final</a>
+    </div>
+
+    <div class="bg-gray-200 rounded-lg p-6">
+      <h2 class="text-2xl font-semibold mb-4">Ressources supplémentaires</h2>
+      <ul class="space-y-2">
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="text-blue-600 hover:underline">Documentation MDN sur HTML</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS" class="text-blue-600 hover:underline">Documentation MDN sur CSS</a></li>
+        <li><a href="https://www.w3.org/Style/CSS/" class="text-blue-600 hover:underline">Spécifications officielles CSS du W3C</a></li>
+        <li><a href="https://css-tricks.com/" class="text-blue-600 hover:underline">CSS-Tricks - Astuces et tutoriels CSS</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">À propos</h4>
+          <ul>
+            <li><a href="/a-propos" class="hover:text-blue-300">Notre mission</a></li>
+            <li><a href="/impact" class="hover:text-blue-300">Notre impact</a></li>
+            <li><a href="/equipe" class="hover:text-blue-300">Notre équipe</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+          <ul>
+            <li><a href="/centre-aide" class="hover:text-blue-300">Centre d'aide</a></li>
+            <li><a href="/parents" class="hover:text-blue-300">Pour les parents</a></li>
+            <li><a href="/enseignants" class="hover:text-blue-300">Pour les enseignants</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Communauté</h4>
+          <ul>
+            <li><a href="/blog" class="hover:text-blue-300">Blog</a></li>
+            <li><a href="/contributeurs" class="hover:text-blue-300">Contributeurs</a></li>
+            <li><a href="/traducteurs" class="hover:text-blue-300">Traducteurs</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4">
+          <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+        <p>&copy; 2023 Khan Academy Inspiré. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript pour la fonctionnalité de menu responsive et le défilement fluide
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('md:hidden', 'text-white', 'focus:outline-none');
+    menuToggle.innerHTML = `
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    `;
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+
+    // Défilement fluide pour les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

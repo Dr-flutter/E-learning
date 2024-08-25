@@ -12,17 +12,23 @@
 </head>
 <body class="bg-gray-100">
   <header class="bg-blue-600 text-white">
-    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold">Khan Academy Inspiré</a>
-      <div class="hidden md:flex space-x-4">
-        <a href="/cours" class="hover:text-blue-200">Cours</a>
-        <a href="/sujets" class="hover:text-blue-200">Sujets</a>
-        <a href="/professeurs" class="hover:text-blue-200">Pour les professeurs</a>
-        <a href="/donateurs" class="hover:text-blue-200">&nbsp;</a>
+    <nav class="container mx-auto px-6 py-3 flex flex-wrap justify-between items-center">
+      <a href="/" class="text-2xl font-bold">Ibra_Academy Inspiré</a>
+      <button class="md:hidden text-white focus:outline-none" id="menuToggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:flex md:w-auto md:items-center" id="mobileMenu">
+        <div class="flex flex-col mt-4 md:flex-row md:mt-0 md:space-x-4">
+          <a href="/cours" class="hover:text-blue-200 py-2">Cours</a>
+          <a href="/sujets" class="hover:text-blue-200 py-2">Sujets</a>
+          <a href="/professeurs" class="hover:text-blue-200 py-2">Pour les professeurs</a>
+        </div>
       </div>
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-4 mt-4 md:mt-0">
         <a href="/page/login/connexion.html" class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100">Connexion</a>
-            <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-600 px-4 py-2 rounded-full hover:bg-yellow-300">Inscription</a>
+        <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-600 px-4 py-2 rounded-full hover:bg-yellow-300">Inscription</a>
       </div>
     </nav>
   </header>
@@ -113,10 +119,11 @@
     </div>
   </main>
 
-  <footer class="bg-gray-800 text-white py-8 mt-12">
+ 
+  <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto px-6">
-      <div class="flex flex-wrap justify-between">
-        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
           <h4 class="text-lg font-semibold mb-4">À propos</h4>
           <ul>
             <li><a href="/a-propos" class="hover:text-blue-300">Notre mission</a></li>
@@ -124,7 +131,7 @@
             <li><a href="/equipe" class="hover:text-blue-300">Notre équipe</a></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+        <div>
           <h4 class="text-lg font-semibold mb-4">Ressources</h4>
           <ul>
             <li><a href="/centre-aide" class="hover:text-blue-300">Centre d'aide</a></li>
@@ -132,7 +139,7 @@
             <li><a href="/enseignants" class="hover:text-blue-300">Pour les enseignants</a></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+        <div>
           <h4 class="text-lg font-semibold mb-4">Communauté</h4>
           <ul>
             <li><a href="/blog" class="hover:text-blue-300">Blog</a></li>
@@ -140,7 +147,7 @@
             <li><a href="/traducteurs" class="hover:text-blue-300">Traducteurs</a></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/4">
+        <div>
           <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
           <div class="flex space-x-4">
             <a href="https://facebook.com" class="hover:text-blue-300">
@@ -162,50 +169,19 @@
         </div>
       </div>
       <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
-        <p>&copy; 2023 Khan Academy Inspiré. Tous droits réservés.</p>
+        <p>&copy; 2023 Ibra_Academy Inspiré. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // JavaScript pour la validation du formulaire
-    const form = document.getElementById('connexionForm');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
       
-      // Ici, vous pouvez ajouter une logique pour envoyer les données du formulaire à votre serveur
-      console.log("Formulaire de connexion soumis avec succès!");
-      alert("Connexion réussie ! Bienvenue sur Khan Academy Inspiré !");
-      
-      // Redirection vers la page d'accueil (à adapter selon votre structure)
-      window.location.href = "/";
-    });
-
-    // JavaScript pour la fonctionnalité de menu responsive
-    const menuToggle = document.createElement('button');
-    menuToggle.classList.add('md:hidden', 'text-white', 'focus:outline-none');
-    menuToggle.innerHTML = `
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    `;
-    
-    const nav = document.querySelector('nav');
-    const mobileMenu = nav.querySelector('.hidden.md\\:flex');
-    
-    nav.insertBefore(menuToggle, mobileMenu);
-    
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileMenu.classList.toggle('flex');
-      mobileMenu.classList.toggle('flex-col');
-      mobileMenu.classList.toggle('absolute');
-      mobileMenu.classList.toggle('top-full');
-      mobileMenu.classList.toggle('left-0');
-      mobileMenu.classList.toggle('right-0');
-      mobileMenu.classList.toggle('bg-blue-600');
-      mobileMenu.classList.toggle('p-4');
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
     });
   </script>
 </body>
