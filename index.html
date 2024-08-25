@@ -1,10 +1,198 @@
-<html lang="en">
-<head>
+<html><head><base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Ibra_Academy - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+    </head>
+    <body class="bg-gray-100">
+      <header class="bg-blue-600 text-white">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+          <a href="/" class="text-2xl font-bold">Ibra_Academy Inspiré</a>
+          <div class="hidden md:flex space-x-4">
+            <a href="/cours" class="hover:text-blue-200">Cours</a>
+            <a href="/sujets" class="hover:text-blue-200">Sujets</a>
+            <a href="/professeurs" class="hover:text-blue-200">Pour les professeurs</a>
+           
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="/page/login/connexion.html" class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100">Connexion</a>
+            <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-600 px-4 py-2 rounded-full hover:bg-yellow-300">Inscription</a>
+          </div>
+        </nav>
+      </header>
     
-</body>
-</html>
+      <main>
+        <section class="bg-blue-700 text-white py-20">
+          <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Apprenez gratuitement, pour toujours.</h1>
+            <p class="text-xl mb-8">Des cours de qualité pour tous, partout.</p>
+            <a href="/inscription" class="bg-yellow-400 text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-300 transition duration-300">Commencez à apprendre</a>
+          </div>
+        </section>
+    
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+              <h2 class="text-3xl font-bold text-center mb-12">Nos domaines d'expertise</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="/mathematiques" class="bg-white rounded-lg shadow-md p-6 text-center hover:bg-blue-100 transition duration-300">
+                  <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                  </svg>
+                  <h3 class="text-xl font-semibold mb-2">Mathématiques</h3>
+                  <p>De l'arithmétique de base au calcul avancé</p>
+                </a>
+                <a href="/sciences" class="bg-white rounded-lg shadow-md p-6 text-center hover:bg-blue-100 transition duration-300">
+                  <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                  </svg>
+                  <h3 class="text-xl font-semibold mb-2">Sciences</h3>
+                  <p>Physique, chimie, biologie et bien plus</p>
+                </a>
+                <a href="/informatique" class="bg-white rounded-lg shadow-md p-6 text-center hover:bg-blue-100 transition duration-300">
+                  <svg class="w-12 h-12 mx-auto mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  <h3 class="text-xl font-semibold mb-2">Informatique</h3>
+                  <p>Programmation, algorithmique et technologies web</p>
+                </a>
+              </div>
+            </div>
+          </section>
+          
+    
+        <section class="bg-gray-200 py-16">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Comment ça marche</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                <h3 class="text-xl font-semibold mb-2">Choisissez un sujet</h3>
+                <p>Parcourez notre vaste bibliothèque de cours et sélectionnez celui qui vous intéresse.</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                <h3 class="text-xl font-semibold mb-2">Apprenez à votre rythme</h3>
+                <p>Regardez des vidéos, lisez des articles et pratiquez avec des exercices interactifs.</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                <h3 class="text-xl font-semibold mb-2">Maîtrisez le sujet</h3>
+                <p>Testez vos connaissances avec des quiz et obtenez des certificats de réussite.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="py-16">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Témoignages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="mb-4">"Grâce à Ibra_Academy Inspiré, j'ai pu rattraper mon retard en mathématiques et réussir mon examen d'entrée à l'université. Les cours sont clairs et faciles à suivre."</p>
+                <p class="font-semibold">- Marie D., étudiante</p>
+              </div>
+              <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="mb-4">"En tant qu'enseignant, j'utilise régulièrement Ibra_Academy Inspiré pour compléter mes cours. C'est un outil formidable pour l'apprentissage personnalisé."</p>
+                <p class="font-semibold">- Pierre L., professeur de sciences</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="bg-blue-600 text-white py-16">
+          <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Prêt à commencer votre parcours d'apprentissage ?</h2>
+            <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-300 transition duration-300">Inscrivez-vous gratuitement</a>
+          </div>
+        </section>
+      </main>
+    
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-1/4 mb-6 md:mb-0">
+              <h4 class="text-lg font-semibold mb-4">À propos</h4>
+              <ul>
+                <li><a href="/a-propos" class="hover:text-blue-300">Notre mission</a></li>
+                <li><a href="/impact" class="hover:text-blue-300">Notre impact</a></li>
+                <li><a href="/equipe" class="hover:text-blue-300">Notre équipe</a></li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4 mb-6 md:mb-0">
+              <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+              <ul>
+                <li><a href="/centre-aide" class="hover:text-blue-300">Centre d'aide</a></li>
+                <li><a href="/parents" class="hover:text-blue-300">Pour les parents</a></li>
+                <li><a href="/enseignants" class="hover:text-blue-300">Pour les enseignants</a></li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4 mb-6 md:mb-0">
+              <h4 class="text-lg font-semibold mb-4">Communauté</h4>
+              <ul>
+                <li><a href="/blog" class="hover:text-blue-300">Blog</a></li>
+                <li><a href="/contributeurs" class="hover:text-blue-300">Contributeurs</a></li>
+                <li><a href="/traducteurs" class="hover:text-blue-300">Traducteurs</a></li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4">
+              <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+              <div class="flex space-x-4">
+                <a href="https://facebook.com" class="hover:text-blue-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" class="hover:text-blue-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                  </svg>
+                </a>
+                <a href="https://youtube.com" class="hover:text-blue-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+            <p>&copy; 2023 Ibra_Academy Inspiré. Tous droits réservés.</p>
+          </div>
+        </div>
+      </footer>
+    
+      <script>
+        // JavaScript pour la fonctionnalité de menu responsive
+        const menuToggle = document.createElement('button');
+        menuToggle.classList.add('md:hidden', 'text-white', 'focus:outline-none');
+        menuToggle.innerHTML = `
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        `;
+        
+        const nav = document.querySelector('nav');
+        const mobileMenu = nav.querySelector('.hidden.md\\:flex');
+        
+        nav.insertBefore(menuToggle, mobileMenu);
+        
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('flex');
+          mobileMenu.classList.toggle('flex-col');
+          mobileMenu.classList.toggle('absolute');
+          mobileMenu.classList.toggle('top-full');
+          mobileMenu.classList.toggle('left-0');
+          mobileMenu.classList.toggle('right-0');
+          mobileMenu.classList.toggle('bg-blue-600');
+          mobileMenu.classList.toggle('p-4');
+        });
+      </script>
+    </body>
+    </html>

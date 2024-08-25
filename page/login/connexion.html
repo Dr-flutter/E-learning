@@ -1,0 +1,212 @@
+<html><head><base href="/commencer/parcours/connexion">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion | Khan Academy Inspiré</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+</style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-600 text-white">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold">Khan Academy Inspiré</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="/cours" class="hover:text-blue-200">Cours</a>
+        <a href="/sujets" class="hover:text-blue-200">Sujets</a>
+        <a href="/professeurs" class="hover:text-blue-200">Pour les professeurs</a>
+        <a href="/donateurs" class="hover:text-blue-200">&nbsp;</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="/page/login/connexion.html" class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100">Connexion</a>
+            <a href="/page/login/inscription.html" class="bg-yellow-400 text-blue-600 px-4 py-2 rounded-full hover:bg-yellow-300">Inscription</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+    <h1 class="text-4xl font-bold mb-8 text-center">Connexion</h1>
+
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+      <form id="connexionForm" class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+        </div>
+        
+        <div>
+          <label for="motdepasse" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+          <input type="password" id="motdepasse" name="motdepasse" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+        </div>
+        
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input type="checkbox" id="souvenir" name="souvenir" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+            <label for="souvenir" class="ml-2 block text-sm text-gray-900">
+              Se souvenir de moi
+            </label>
+          </div>
+          <div class="text-sm">
+            <a href="/mot-de-passe-oublie" class="font-medium text-blue-600 hover:text-blue-500">
+              Mot de passe oublié ?
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Se connecter
+          </button>
+        </div>
+      </form>
+      
+      <div class="mt-6">
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="px-2 bg-white text-gray-500">
+              Ou se connecter avec
+            </span>
+          </div>
+        </div>
+        
+        <div class="mt-6 grid grid-cols-3 gap-3">
+          <div>
+            <a href="https://accounts.google.com/o/oauth2/v2/auth" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.facebook.com/v2.8/dialog/oauth" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://appleid.apple.com/auth/authorize" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.878 14.243c-.787 1.927-1.169 2.789-2.183 4.489-1.402 2.352-3.382 5.282-5.832 5.3-2.17.016-2.722-1.384-5.657-1.368-2.934.015-3.549 1.392-5.72 1.375-2.45-.017-4.323-2.67-5.724-5.022-3.913-6.563-4.305-14.261-.941-18.34 1.944-2.346 5.022-3.718 7.857-3.757 2.455-.037 4.776 1.765 6.278 1.765 1.503 0 4.323-2.184 7.284-1.864 1.241.1 4.718.505 6.956 3.81-6.46 3.594-5.441 12.93 1.681 14.612zm-7.007-17.275c-1.65-1.682-3.903-2.908-5.985-2.965-1.015 3.946 2.405 8.369 5.987 10.83 3.582-2.461 7.002-6.884 5.998-10.83-2.083.057-4.336 1.283-5.985 2.965z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-6 text-center">
+        <p class="text-sm text-gray-600">
+          Vous n'avez pas de compte ? 
+          <a href="/inscription" class="font-medium text-blue-600 hover:text-blue-500">
+            Inscrivez-vous
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">À propos</h4>
+          <ul>
+            <li><a href="/a-propos" class="hover:text-blue-300">Notre mission</a></li>
+            <li><a href="/impact" class="hover:text-blue-300">Notre impact</a></li>
+            <li><a href="/equipe" class="hover:text-blue-300">Notre équipe</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Ressources</h4>
+          <ul>
+            <li><a href="/centre-aide" class="hover:text-blue-300">Centre d'aide</a></li>
+            <li><a href="/parents" class="hover:text-blue-300">Pour les parents</a></li>
+            <li><a href="/enseignants" class="hover:text-blue-300">Pour les enseignants</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-4">Communauté</h4>
+          <ul>
+            <li><a href="/blog" class="hover:text-blue-300">Blog</a></li>
+            <li><a href="/contributeurs" class="hover:text-blue-300">Contributeurs</a></li>
+            <li><a href="/traducteurs" class="hover:text-blue-300">Traducteurs</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/4">
+          <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="hover:text-blue-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+        <p>&copy; 2023 Khan Academy Inspiré. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript pour la validation du formulaire
+    const form = document.getElementById('connexionForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Ici, vous pouvez ajouter une logique pour envoyer les données du formulaire à votre serveur
+      console.log("Formulaire de connexion soumis avec succès!");
+      alert("Connexion réussie ! Bienvenue sur Khan Academy Inspiré !");
+      
+      // Redirection vers la page d'accueil (à adapter selon votre structure)
+      window.location.href = "/";
+    });
+
+    // JavaScript pour la fonctionnalité de menu responsive
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('md:hidden', 'text-white', 'focus:outline-none');
+    menuToggle.innerHTML = `
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    `;
+    
+    const nav = document.querySelector('nav');
+    const mobileMenu = nav.querySelector('.hidden.md\\:flex');
+    
+    nav.insertBefore(menuToggle, mobileMenu);
+    
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+      mobileMenu.classList.toggle('flex-col');
+      mobileMenu.classList.toggle('absolute');
+      mobileMenu.classList.toggle('top-full');
+      mobileMenu.classList.toggle('left-0');
+      mobileMenu.classList.toggle('right-0');
+      mobileMenu.classList.toggle('bg-blue-600');
+      mobileMenu.classList.toggle('p-4');
+    });
+  </script>
+</body>
+</html>
