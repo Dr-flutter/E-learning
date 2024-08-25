@@ -102,11 +102,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white rounded-lg shadow-md p-6">
             <p class="mb-4">"Grâce à Ibra_Academy Inspiré, j'ai pu rattraper mon retard en mathématiques et réussir mon examen d'entrée à l'université. Les cours sont clairs et faciles à suivre."</p>
-            <p class="font-semibold">- Marie D., étudiante</p>
+            <p class="font-semibold">- Hindou P., étudiante</p>
           </div>
           <div class="bg-white rounded-lg shadow-md p-6">
             <p class="mb-4">"En tant qu'enseignant, j'utilise régulièrement Ibra_Academy Inspiré pour compléter mes cours. C'est un outil formidable pour l'apprentissage personnalisé."</p>
-            <p class="font-semibold">- Pierre L., professeur de sciences</p>
+            <p class="font-semibold">- Youssouf N., professeur de d'informatiques</p>
           </div>
         </div>
       </div>
@@ -184,20 +184,31 @@
       });
     });
 
-    // Ajout d'un effet de survol sur les cartes de cours
-const courseCards = document.querySelectorAll('.bg-white.rounded-lg.shadow-md.overflow-hidden');
-courseCards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = 'translateY(-5px)';
-    card.style.transition = 'transform 0.3s ease';
-    card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)';
-  });
+   
+    // Animation d'apparition des cartes de cours
+    const courseCards = document.querySelectorAll('.bg-white.rounded-lg');
+    courseCards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
 
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'translateY(0)';
-    card.style.boxShadow = '';
-  });
-});
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 100 * index);
+    });
+
+    // Ajout d'un effet de survol sur les cartes de cours
+    courseCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.03)';
+        card.style.transition = 'transform 0.3s ease';
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1)';
+      });
+    });
   </script>
 </body>
 </html>
